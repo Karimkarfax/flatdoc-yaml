@@ -4,6 +4,11 @@
  * @license MIT
  */
 
+  // modified for yaml support
+  // markdown content with yaml
+  // maybegeek
+  mdContent = window.mdContent;
+
 (function($) {
   var exports = this;
 
@@ -170,9 +175,19 @@
 
     Parser.setMarkedOptions(highlight);
 
-    var html = $("<div>" + marked(source));
-    var h1 = html.find('h1').eq(0);
-    var title = h1.text();
+    // original flatdoc
+    //var html = $("<div>" + marked(source));
+    //var h1 = html.find('h1').eq(0);
+    //var title = h1.text();
+    
+    // modified flatdoc to get the yaml meta
+    // maybegeek
+    mdContent = jsyaml.loadFront(source);
+    mdContent.__content = markdown.toHTML(mdContent.__content);
+    var html = $("<div>" + mdContent.__content);
+    var h1 = mdContent.title;
+    var title = mdContent.title;
+    document.title = mdContent.title;
 
     // Mangle content
     Transformer.mangle(html);
