@@ -1,0 +1,157 @@
+/****
+typography
+****/
+* {
+  font-family:"Open Sans", sans-serif;
+  text-rendering: optimizeLegibility;
+}
+
+
+/****
+colors
+****/
+#big {
+  background-color:#09C;
+}
+
+#big h1#flat-title,
+  h1,
+  nav#flatdoc-menu a {
+  color:#09C;
+}
+
+#big h1#flat-title {
+  font:normal 300 4em/1.2 "Open Sans", sans-serif;
+  color:#ecf0f1;
+}
+
+#big #subtitle {
+  color:#ecf0f1;
+  font:italic 300 2em/1.2 "Open Sans", sans-serif;
+  padding-bottom:1em;
+}
+
+/****
+headings in main
+****/
+main h1,
+main h2,
+main h3,
+main h4 {
+  font-weight:normal;
+  line-height:1.2;
+}
+
+h1 {
+  font-size:3em;
+}
+
+
+/****
+navigation nav
+****/
+div.waypoint {
+  padding-left:0;
+  padding-right:0;
+}
+
+nav#flatdoc-menu > ul {
+  padding-left:0;
+  padding-top:20px;
+  list-style-type:none;
+}
+
+nav#flatdoc-menu > ul > li > ul  {
+  padding-left:0;
+  list-style-type:none;
+}
+
+nav#flatdoc-menu > ul > li > ul > li  {
+  margin-bottom:1.1em;
+}
+
+nav#flatdoc-menu > ul > li > ul > li > ul {
+  padding-left:0;
+  list-style-type:none;
+}
+
+nav#flatdoc-menu > ul > li > ul > li > ul > li  {
+  margin-bottom:0.16em;
+}
+
+nav#flatdoc-menu > ul > li > ul > li > ul > li > ul {
+  padding-left:0;
+  list-style-type:none;
+}
+
+nav#flatdoc-menu a {
+  text-decoration:none;
+  padding:0.1em 0.1em 0.1em 0.5em;
+  border-left-width:2px;
+  border-left-style:solid;
+  border-left-color:transparent;
+  display:inline-block;
+  line-height:1.28;
+}
+
+nav#flatdoc-menu a.active {
+  border-left-color:#E67E22;
+          transition: border-left-color .8s ease-in-out;
+  -webkit-transition: border-left-color .8s ease-in-out;
+     -moz-transition: border-left-color .8s ease-in-out;
+}
+
+/* section nav */
+nav#flatdoc-menu > ul > li > ul > li a {
+  font-size:110%;
+  line-height:1.1;
+}
+
+/* sub-section nav */
+nav#flatdoc-menu > ul > li > ul > li > ul > li a {
+  font-size:96%;
+  line-height:1.1;
+  margin-left:1em;
+}
+
+nav#flatdoc-menu > ul > li > ul > li > ul > li a.active {
+}
+
+/* sub-sub-section nav */
+nav#flatdoc-menu > ul > li > ul > li > ul > li > ul > li a {
+  font-size:82%;
+  line-height:1.1;
+  margin-left:1.9em;
+}
+
+nav#flatdoc-menu > ul > li > ul > li > ul > li > ul > li > a.active {
+}
+
+
+footer p {
+  text-align:right;
+}
+
+@media (min-width: 769px) {
+  .stuck {
+    position:fixed;
+    top:0;
+    width:33.32%;
+  }
+}
+
+@media (max-width: 768px) {
+  div.waypoint {
+    padding-left:20px;
+    padding-right:20px;
+  }
+
+  nav#flatdoc-menu > ul > li a {
+    font-size:140% !important;
+    border:2px solid transparent !important;
+  }
+  
+  nav#flatdoc-menu > ul > li a:hover {
+    text-decoration:underline;  
+  }
+}
