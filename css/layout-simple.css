@@ -1,33 +1,26 @@
 * {
   font-family:"Open Sans", sans-serif;
   text-rendering: optimizeLegibility;
+}
+
+body {
   color: #69606B;
 }
 
 #big {
   background-color:#09C;
-}
-
-#big h1#flat-title,
-  h1,
-  nav#flatdoc-menu a {
-  color:#09C;
+  color:#ecf0f1;
 }
 
 #big h1#flat-title {
   font:normal 300 4em/1.2 "Open Sans", sans-serif;
-  color:#ecf0f1;
 }
 
 #big #subtitle {
-  color:#ecf0f1;
   font:italic 300 2em/1.2 "Open Sans", sans-serif;
   padding-bottom:1em;
 }
 
-/****
-headings in main
-****/
 main h1,
 main h2,
 main h3,
@@ -36,17 +29,18 @@ main h4 {
   line-height:1.2;
 }
 
-h1 {
+main h1 {
   font-size:3em;
+  color:#09C;
 }
 
-
-/****
-navigation nav
-****/
 div.waypoint {
   padding-left:0;
   padding-right:0;
+}
+
+nav#flatdoc-menu a {
+  color:#09C;
 }
 
 nav#flatdoc-menu > ul {
@@ -120,7 +114,6 @@ nav#flatdoc-menu > ul > li > ul > li > ul > li > ul > li a {
 
 nav#flatdoc-menu > ul > li > ul > li > ul > li > ul > li > a.active {
 }
-
 
 footer p {
   text-align:right;
