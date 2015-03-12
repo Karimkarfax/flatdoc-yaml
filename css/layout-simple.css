@@ -1,15 +1,9 @@
-/****
-typography
-****/
 * {
   font-family:"Open Sans", sans-serif;
   text-rendering: optimizeLegibility;
+  color: #69606B;
 }
 
-
-/****
-colors
-****/
 #big {
   background-color:#09C;
 }
